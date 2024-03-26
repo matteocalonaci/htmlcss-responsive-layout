@@ -256,6 +256,10 @@ header {
     margin-bottom: 1rem;
 }
 
+.text-content {
+    margin: auto;
+}
+
 .text .img-test1 {
     background-image: url(../IMG/testimonial1.jpg);
     background-size: cover;
@@ -486,5 +490,90 @@ footer {
 
     .about-us .small-card {
         padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-first-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%
+    }
+
+    .big-card {
+        width: 68%;
+    }
+
+    .big-card-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-first-row .small-card {
+        width: 33%;
+    }
+
+    .main-second-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .main-second-row .small-card {
+        width: 33.3%;
+    }
+
+    .testimonials1 .small-card .text {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0.5rem 0.5rem;
+    }
+
+    .wrap .small-card {
+        width: 32%;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-us .small-card {
+        padding: 0 1rem;
+    }
+
+    .planning {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .planning1 {
+        min-height: 50rem;
+        padding: 1rem;
+        margin: 0%;
+    }
+
+    .planning1 .small-card .text {
+        margin-top: 8rem;
+    }
+
+    .planning2 {
+        max-height: 40rem;
+        padding: 1rem;
+        margin-top: 15rem;
     }
 }
