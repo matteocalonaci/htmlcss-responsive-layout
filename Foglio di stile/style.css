@@ -497,7 +497,7 @@ footer {
     .main-first-row {
         display: flex;
         flex-direction: row;
-        width: 100%
+        width: 80%
     }
 
     .big-card {
@@ -516,7 +516,7 @@ footer {
     .main-second-row {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 80%;
     }
 
     .main-second-row .small-card {
