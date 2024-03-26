@@ -6,366 +6,485 @@
 
 }
 
-
-/*  HEADER */
-
-
-.header {
-    border: 0.1rem solid red;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
+/* HEADER */
+header {
     width: 100%;
-    background-color: rgb(42, 113, 255);
+    background-color: rgb(0, 132, 253);
 }
 
-.header_content {
+.flex-container {
     display: flex;
-    justify-content: center;
-}
-
-.header_logo {
-    padding: 1rem;
-    padding-right: 10rem;
-    color: white;
-
-}
-
-.header_menu {
-    padding-left: rem;
-}
-
-
-.header_menu li {
-    display: inline-block;
-
-}
-
-.header_menu li a {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-decoration: none;
-    background-color: rgba(42, 113, 255, 0.401);
-    color: white;
-    padding: 1rem;
-    overflow: hidden;
-
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0;
 }
-
-.header_menu li button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    border-radius: 10rem;
-    padding: 0.5rem 1rem;
-    overflow: hidden;
-
-}
-
 
 /* MAIN */
 
-main {
-    margin-top: 5rem;
-}
+/* Prima sezione big card e small card */
 
-.section-all {
-    width: 80%;
-    margin: auto;
-}
-
-/*sezione iniziale con card-big e 4 card-small */
-
-.white {
-    width: 100%;
+.main-flex-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
-    min-height: 5rem;
     width: 80%;
     margin: auto;
-    padding: 1rem;
-}
-
-.first-row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-
-
-.second-row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.card-big {
-    display: flex;
-    margin-top: auto;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 1rem;
-
-
-}
-
-.card-big .text {
-    background-color: green;
-    line-height: 2rem;
-    padding: 1rem;
-
-}
-
-.text h2 {
     padding: 1rem 0;
 }
 
-.text button {
+.main-first-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: ;
+    margin: auto;
+    width: 80%;
+}
+
+.big-card {
+    background-color: rgb(181, 221, 255);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.main-first-row .big-card .text h2 {
+    padding: 1rem 0;
+}
+
+.main-first-row .big-card .text p {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+
+
+.big-card .text button {
     padding: 1rem 3rem;
     margin: 2rem 0;
     border-radius: 10rem;
+    background-color: rgb(0, 132, 253);
 }
 
-
-.card-big .img {
-    background-color: red;
-    padding: 5rem;
-
+.main-first-row .text h2 {
+    color: rgb(0, 132, 253);
 }
 
-
-.card-small .text {
-    background-color: blue;
-    line-height: 2rem;
-    padding: 1rem;
-
+.big-card .img {
+    background-image: url(../IMG/phone.png);
+    background-size: cover;
+    min-height: 18rem;
+    width: 100%;
 }
 
-.first-row .card-small {
-    margin: 0 1rem;
-
+.main-first-row .small-card {
+    margin: auto;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 0.5rem 0.5rem;
+    background-color: rgb(181, 221, 255);
 }
 
-.second-row .card-small {
-    margin: 0.5rem 1rem;
-}
-
-
-.card-small h2 {
+.main-first-row .small-card .text h2 {
     padding: 1rem 0;
 }
 
-
-.card-small .img {
-    background-color: red;
-    padding: 5rem;
-
+.main-first-row .small-card .text p {
+    padding: 1rem 0;
+    line-height: 1.5rem;
 }
 
-/* seconda sezione 2img +testo */
 
+.small-card i {
+    font-size: 5rem;
+}
 
-.purple {
-    width: 80%;
+.main-second-row {
+    display: flex;
+    flex-direction: column;
     margin: auto;
+    width: 80%;
+}
+
+.main-second-row .small-card {
+    margin: auto;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 0.5rem 0.5rem;
+    background-color: rgb(181, 221, 255);
+}
+
+
+.main-second-row .text h2 {
+    color: rgb(0, 132, 253);
+    padding: 1rem 0;
+}
+
+.main-second-row .text p {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+
+.text .icon {
+    color: rgb(0, 132, 253);
+}
+
+/* Seconda sezione  2 card */
+
+.main-flex-container-purple {
+    background-color: rgb(151, 146, 228);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.planning1 .img {
+    background-image: url(../IMG/planning1.png);
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    min-height: 18rem;
+}
+
+.planning1 {
     display: flex;
     justify-content: center;
-    background-color: blueviolet;
-}
-
-.purple .card-small {
-    margin: 0 1rem;
-}
-
-.card-dx {
+    align-items: center;
+    margin: auto;
+    width: 70%;
     padding: 1rem;
 }
 
-.card-dx .img {
-    display: flex;
-    background-color: red;
-    padding: 5rem;
-
+.planning1 .small-card {
+    text-align: left;
+    color: white;
 }
 
-/* terza sezione testimonials */
-
-
-.card-a {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    border: 0.1rem solid black;
-    margin: 1rem 0;
+.planning1 .small-card h2 {
+    padding: 3rem 0;
 }
 
-.card-a .img {
+.planning1 .small-card p {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+
+
+.planning2 {
     display: flex;
     justify-content: center;
-    width: 20%;
-    background-color: azure;
-    padding: 5rem;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
 }
 
-.card-a .text {
-    width: 100%;
-    background-color: yellow;
+.planning2 .small-card h2 {
     text-align: center;
+    padding: 2rem 0;
+}
+
+.planning2 .small-card p {
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+
+.planning2 .img {
+    background-image: url(../IMG/planning2.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 18rem;
+}
+
+.text .arrow {
+    margin: auto;
+    width: 3.5rem;
+    background-color: rgb(151, 146, 228);
+    border-radius: 100%;
+}
+
+.text .arrow i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: black;
+}
+
+/* terza sezione Testimonials 3 card */
+
+.small-card p i {
+    font-size: 1rem;
+}
+
+.small-card p i {
+    font-size: 1rem;
+}
+
+.testimonials1 {
+    width: 80%;
+    text-align: center;
+}
+
+.testimonials1 h3 {
+    padding: 1rem 0;
+}
+
+.testimonials1 h2 {
+    padding: 1rem 0;
+    color: rgb(151, 146, 228);
+}
+
+.testimonials1 p {
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+
+.testimonials1 .small-card {
+    margin: 1rem 0;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(151, 146, 228);
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text .img-test1 {
+    background-image: url(../IMG/testimonial1.jpg);
+    background-size: cover;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.text .img-test2 {
+    background-image: url(../IMG/testimonial2.jpg);
+    background-size: cover;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.text .img-test3 {
+    background-image: url(../IMG/testimonial3.jpg);
+    background-size: cover;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+/* quarta sezione  BENEFITS */
+
+.benefits {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+.benefits .small-card {
+    padding: 0.5rem 0.5rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.benefits h2 {
+    color: white;
+    padding: 2rem 0;
+}
+
+.benefits h3 {
+    color: rgb(151, 146, 228);
+}
+
+.benefits .text {
+    text-align: left;
+}
+
+.text .number {
+    font-size: 3rem;
+    color: rgb(151, 146, 228);
+}
+
+.benefits .small-card button {
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    border-radius: 10rem;
+    background-color: rgb(151, 146, 228);
+    color: white;
+}
 
 
+.benefits .small-card h3 {
+    padding: 1rem 0;
+}
+
+.benefits .small-card p {
+    line-height: 1.5rem;
+}
+
+/* quarta sezione */
+
+.about-us {
+    width: 80%;
+
+}
+
+.about-us h2 {
+    color: rgb(151, 146, 228);
+    padding: 1rem 0;
+}
+
+.about-us p {
+    padding: 1rem 0;
+    line-height: 2rem;
+}
+
+.about-us .small-card {
+    text-align: left;
+    padding: 1rem;
+}
+
+.text .about-img {
+    background-image: url(../IMG/about.jpg);
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+
+}
+
+.about-us .small-card .text {
+    color: rgb(151, 146, 228);
+    padding: 2rem 0;
+
+}
+
+.about-us .small-card .text h3 {
+    padding: 1rem 0;
+}
+
+.about-us .small-card .text button {
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    border-radius: 10rem;
+    color: white;
+    background-color: rgb(151, 146, 228);
+}
+
+/* quinta sezione GET STARTED */
+
+.get-started {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.get-started h4 {
+    color: rgb(213, 212, 244);
+}
+
+.get-started h3 {
+    color: white;
+}
+
+.get-started h2 {
+    color: rgb(253, 193, 95);
+}
+
+.get-started button {
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    border-radius: 10rem;
+    color: rgb(151, 146, 228);
+    background-color: white;
 }
 
 
 
-/* FOOTER */
-
-
-/* MEDIA QUERY */
-
-
-@media screen and (max-width: 768px) {
-
-
-    .header_menu {
-        position: absolute;
-        top: 5rem;
-        width: 100%;
-        height: 100vh;
-        height: 0vh;
-    }
-
-    .header_menu li {
-        width: 100%;
-        border-bottom: 0.1rem solid white;
-    }
-
-    .header_menu-open {
-        height: 100vh;
-    }
-
-    .header_icons {
-        display: flex;
-        justify-content: flex-end;
-        padding: 0.1rem;
-        width: 100%;
-    }
-
-    .header_icons .hamburger {
-        border: 0.1rem solid red;
-        height: 3rem;
-        width: 3rem;
-
-    }
-
-    .hamburger span {
-        position: relative;
-        display: block;
-        height: 0.2rem;
-        width: 2.5rem;
-        margin-top: 0.5rem;
-        background-color: white;
-
-    }
+/* Footer */
+footer {
+    background-color: rgb(20, 20, 20);
 }
+
+.footer-container {
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.footer-container .text p {
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
 
 @media screen and (min-width: 768px) {
 
-    /* prima sezione */
-
-    body {
-        background-color: yellow;
+    .main-first-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%
     }
 
-    .first-row {
+    .big-card {
+        width: 70%;
+    }
+
+    .main-first-row .small-card {
+        width: 30%;
+    }
+
+    .main-second-row {
+        display: flex;
+        flex-direction: row;
         width: 100%;
+    }
+
+    .main-second-row .small-card {
+        width: 33.3%;
+    }
+
+    .testimonials1 .small-card .text {
         display: flex;
         flex-direction: row;
     }
 
-    .card-big {
+    .benefits {
         display: flex;
         flex-direction: row;
-
+        flex-wrap: wrap;
     }
 
-    .second-row {
+    .wrap {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0.5rem 0.5rem;
     }
 
-    /*  seconda sezione */
-
-    .purple .card-small {
-        display: flex;
-        flex-direction: column;
+    .wrap .small-card {
+        width: 46%;
     }
 
-    .card-a {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-}
-
-@media screen and (min-width: 1200px) {
-
-    body {
-        background-color: palevioletred;
-    }
-
-    .first-row {
-        width: 100%;
+    .about-us {
         display: flex;
         flex-direction: row;
     }
 
-    .card-big {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .second-row {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-
-    .purple .card-small {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .purple .card-dx {
-        display: flex;
-        flex-direction: row;
-    }
-
-
-    .card-a {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    .about-us .small-card {
+        padding: 0 1rem;
     }
 }
